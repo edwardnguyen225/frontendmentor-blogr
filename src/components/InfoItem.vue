@@ -30,7 +30,7 @@
   color: #4c5862;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .item {
     max-width: 540px;
     text-align: left;
