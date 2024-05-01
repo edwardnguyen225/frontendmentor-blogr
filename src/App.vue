@@ -4,6 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 import TheFooter from './components/TheFooter.vue'
 import ThirdSection from './components/ThirdSection.vue'
 import FirstSection from './components/FirstSection.vue'
+import SecondSection from './components/SecondSection.vue'
 </script>
 
 <template>
@@ -63,15 +64,7 @@ import FirstSection from './components/FirstSection.vue'
 
     <FirstSection />
 
-    <section>
-      <img alt="Editor" src="./assets/images/illustration-phones.svg" width="328" height="347" />
-      <h2>State of the Art Infrastructure</h2>
-      <p>
-        With reliability and speed in mind, worldwide data centers provide the backbone for
-        ultra-fast connectivity. This ensures your site will load instantly, no matter where your
-        readers are, keeping your site competitive.
-      </p>
-    </section>
+    <SecondSection />
 
     <ThirdSection />
   </main>
@@ -82,6 +75,10 @@ import FirstSection from './components/FirstSection.vue'
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+main {
+  overflow: hidden;
 }
 
 .logo {
