@@ -61,31 +61,38 @@ import InfoItem from './InfoItem.vue'
   gap: 40px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .section-container {
-    flex-direction: row;
-    gap: 40px;
-    margin: 0 auto;
-    align-items: center;
+    margin: 300px auto 200px;
     max-width: 1440px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
 
   picture {
     width: 50%;
+    max-width: 540px;
   }
 
   .illustration {
     flex: 1 1 auto;
     margin: 0;
     width: auto;
-    height: calc(786 / 1440 * 100% * 1px);
+    width: 100%;
+    max-width: 784px;
+    height: auto;
     margin-bottom: 0;
     position: relative;
-    left: -320px;
+    left: -50%;
+    transform: scale(2);
   }
 
   .content {
     width: 50%;
+    max-width: 540px;
     gap: 40px;
   }
 }
