@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import TheFooter from './components/TheFooter.vue'
 import ThirdSection from './components/ThirdSection.vue'
 import FirstSection from './components/FirstSection.vue'
@@ -9,16 +7,6 @@ import SecondSection from './components/SecondSection.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-
     <nav>
       <ul>
         <li>
@@ -52,7 +40,9 @@ import SecondSection from './components/SecondSection.vue'
       <button>Login</button>
       <button>Login</button>
     </nav>
+  </header>
 
+  <main>
     <div style="margin-bottom: 100px">
       <h2>A modern publishing platform</h2>
       <p>Grow your audience and build your online brand</p>
