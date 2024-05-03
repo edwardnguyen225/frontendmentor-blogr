@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 import ThirdSection from './components/ThirdSection.vue'
 import FirstSection from './components/FirstSection.vue'
@@ -6,52 +7,9 @@ import SecondSection from './components/SecondSection.vue'
 </script>
 
 <template>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          Product
-          <ul>
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
-          </ul>
-        </li>
-        <li>
-          Company
-          <ul>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
-          </ul>
-        </li>
-        <li>
-          Connect
-          <ul>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>LinkedIn</li>
-          </ul>
-        </li>
-      </ul>
-      <button>Login</button>
-      <button>Login</button>
-    </nav>
-  </header>
+  <TheHeader />
 
   <main>
-    <div style="margin-bottom: 100px">
-      <h2>A modern publishing platform</h2>
-      <p>Grow your audience and build your online brand</p>
-      <div>
-        <button>Start for Free</button>
-        <button>Learn More</button>
-      </div>
-    </div>
-
     <FirstSection />
 
     <SecondSection />
@@ -63,35 +21,14 @@ import SecondSection from './components/SecondSection.vue'
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
 main {
+  margin-top: 100px;
   overflow: hidden;
 }
 
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 }
 
 footer {
