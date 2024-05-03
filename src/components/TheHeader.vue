@@ -71,7 +71,6 @@ onUnmounted(() => {
               <div
                 role="button"
                 @click="setActiveItem(item.item)"
-                @mouseenter="setActiveItem(item.item)"
                 :class="{ active: activeItem === item.item }"
               >
                 {{ item.item }}
@@ -142,7 +141,7 @@ onUnmounted(() => {
     <div class="header-content">
       <div class="content">
         <h1>
-          A modern<br />
+          A modern<br v-show="isMobile" />
           publishing platform
         </h1>
         <p>Grow your audience and build your online brand</p>
@@ -259,9 +258,8 @@ button {
 
 .btn-ghost-white:hover,
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.75);
-  border-color: rgba(255, 255, 255, 0.75);
-  color: #ff505c;
+  background: #ffffff;
+  color: #ff7b86;
 }
 
 .btn-ghost {
@@ -379,6 +377,10 @@ button {
     background-position-y: 49%;
   }
 
+  button {
+    padding: 15px 40px;
+  }
+
   .header-container {
     max-width: 1110px;
     margin: 0 auto;
@@ -459,6 +461,17 @@ button {
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+
+  .header-content .content h1 {
+    font-size: 64px;
+    line-height: 98px;
+    letter-spacing: -1.92px;
+  }
+
+  .header-content .content p {
+    font-size: 20px;
+    line-height: 31px;
   }
 }
 </style>
