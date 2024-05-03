@@ -11,9 +11,7 @@ import SecondSection from './components/SecondSection.vue'
 
   <main>
     <FirstSection />
-
     <SecondSection />
-
     <ThirdSection />
   </main>
 
@@ -22,7 +20,8 @@ import SecondSection from './components/SecondSection.vue'
 
 <style scoped>
 main {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 
@@ -31,11 +30,11 @@ main {
   margin: 0 auto 2rem;
 }
 
-footer {
-  margin-top: 100px;
-}
-
 @media (min-width: 1024px) {
+  main {
+    padding-top: 200px;
+  }
+
   footer {
     margin-top: 123px;
   }
