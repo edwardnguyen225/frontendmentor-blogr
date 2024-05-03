@@ -1,18 +1,28 @@
-# blogr-landing-page
+# Frontend Mentor - Blogr landing page solution
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Recommended IDE Setup
+> Users should be able to:
+>
+> - View the optimal layout for the site depending on their device's screen size
+> - See hover states for all interactive elements on the page
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Solution URL](https://github.com/edwardnguyen225/frontendmentor-blogr)
+- [Live Site URL](https://blogr.trinhan.xyz/)
 
-## Type Support for `.vue` Imports in TS
+![](./screenshot.png)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Customize configuration
+## Table of contents
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [Frontend Mentor - Blogr landing page solution](#frontend-mentor---blogr-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Project Setup](#project-setup)
+    - [Compile and Hot-Reload for Development](#compile-and-hot-reload-for-development)
+    - [Type-Check, Compile and Minify for Production](#type-check-compile-and-minify-for-production)
+  - [Lint with ESLint](#lint-with-eslint)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
 ## Project Setup
 
@@ -32,8 +42,17 @@ bun dev
 bun build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Lint with [ESLint](https://eslint.org/)
 
 ```sh
 bun lint
 ```
+
+### Continued development
+
+- Not thinking of yet
+
+## Author
+
+- Website - [Nhan Nguyen](https://trinhan.xyz)
+- Frontend Mentor - [@edwardnguyen225](https://www.frontendmentor.io/profile/edwardnguyen225)
